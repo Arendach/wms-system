@@ -1,0 +1,20 @@
+php_flag magic_quotes_gpc Off
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+# CheckSpelling on
+
+Options +FollowSymlinks
+RewriteBase /
+
+RewriteRule ^index\.php$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.)*$ /index.php [NC,L]
+</IfModule>
+
+RemoveHandler .tpl
+AddType application/x-httpd-php .php .tpl

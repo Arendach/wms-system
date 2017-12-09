@@ -1,0 +1,17 @@
+{
+  "require": {
+    "filp/whoops": "2.*",
+    "lis-dev/nova-poshta-api-2": "dev-master",
+    "kint-php/kint": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Web\\": "web",
+      "RedBeanPHP\\": "web/App/RedBeanPHP"
+    },
+    "files": [
+      "config.php",
+      "functions.php"
+    ]
+  }
+}

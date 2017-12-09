@@ -1,0 +1,8 @@
+input.filter_time_input {
+    display: inline-block;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+    margin-top: 2px;
+}
